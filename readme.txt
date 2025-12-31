@@ -3,7 +3,7 @@ Contributors: mohamadsultan
 Tags: woocommerce, search, product filter, step by step, dependent dropdowns
 Requires at least: 5.0
 Tested up to: 6.4
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 Requires PHP: 7.2
 License: GPLv2 or later
 
@@ -27,6 +27,11 @@ License: GPLv2 or later
 4. استخدم الشورت كود `[wsf_search]`.
 
 == Changelog ==
+
+= 1.1.0 =
+* حجم-أول في التوجيه الذكي (Representative Redirect).
+* بدائل البراند على صفحة المنتج مع كاروسيل.
+* تحديث أسعار البدائل عبر AJAX.
 
 = 1.0.0 =
 * الإصدار الأول.
