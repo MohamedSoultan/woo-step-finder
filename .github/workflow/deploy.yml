@@ -2,6 +2,7 @@ name: Deploy Plugin to WordPress
 on:
   push:
     branches:
+      - main
       - release/lifecycle # هيشتغل أول ما تعمل Push للبرانش ده
 
 jobs:
@@ -14,8 +15,8 @@ jobs:
       - name: Sync files to Server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.FTP_CAPITALTIRES }}
-          username: ${{ secrets.FTP_MOHAMEDSOULTAN }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_MUSERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           # المسار اللي هيترفع فيه البلجن (عدله حسب سيرفرك)
           server-dir: public_html/wp-content/plugins/woo-step-finder/
